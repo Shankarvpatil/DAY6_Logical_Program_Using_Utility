@@ -9,10 +9,11 @@ public class PerfectNumber {
         System.out.print("Enter a number: ");
         int num = s.nextInt();
         int perfectNum = perfectNumber(num);
-        if (perfectNum == num)
+        if (perfectNum == num){
             System.out.println(num + " is a perfect number.");
-        else
+        }else{
             System.out.println(num + " is not a perfect number.");
-            int num = utility.getIntValue();
-		    utility.perfectNumber(num);
+	     }     
     }
+   	 int num = utility.getIntValue();
+ 	 utility.perfectNumber(num);
