@@ -95,6 +95,7 @@ public void getElapsTime() {
        System.out.println("Elaps time = "+elaps+" sec");	
 	}
 }
+//generate coupon
 
 public static void getCoupons(int noOfcoupns, int sizeOfCoupon) {
 		int cnt = 0;
@@ -110,8 +111,6 @@ public static void getCoupons(int noOfcoupns, int sizeOfCoupon) {
 		}
 		
 	}
-
-	//generate random your coupons
 
 	public static String generateCoupons(int sizeOfCoupon) {
 		String str = "";
