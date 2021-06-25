@@ -1,11 +1,12 @@
 package com.Bridglab.programs
 import java.util.Scanner;
 import com.bridgebaz.utility.Utility
-public class PrimeNumber {
+public class ReverseNumber {
     public static void main(String[] args) {
-    	Utility utility = new Utility();
+        Utility utility = new Utility();
         Scanner s = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int num = s.nextInt();
-        utility.isPrime(num);
+        int num1 = utility.getIntValue();
+        int reverse = reverseNumber(num);
+        System.out.println("Reverse number is: " + reverse);
+        utility.reverseNumber(num);
     }
