@@ -13,5 +13,11 @@ public class Coupons {
 		Utility.getCoupons(numberOfCoupns,sizeOfCoupon);
 
 	}
+public class StopWatch {
+    public static void main(String[] args) {
+        Utility utility = new Utility();
+     	 System.out.println("Enter the your Choice");
+     	 utility.getElapsTime();
+    }    
 
 }
