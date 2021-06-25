@@ -111,7 +111,7 @@ public static void getCoupons(int noOfcoupns, int sizeOfCoupon) {
 		
 	}
 
-	//generate random coupons
+	//generate random your coupons
 
 	public static String generateCoupons(int sizeOfCoupon) {
 		String str = "";
