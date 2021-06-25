@@ -1,1 +1,75 @@
+package com.bridgebaz.utility;
+
+import java.util.Scanner;
+
+public class Utility {
+	Scanner scanner;
+	public Utility() {
+		scanner = new Scanner(System.in);
+	}
+	// get integer input
+	public int getIntValue() {
+		return scanner.nextInt();
+	}
+  //Fibonacci Series
+  private static void fibonacci(int num) {
+        int n = num;
+        int a = 0;
+        int b = 1;
+        System.out.print(a + " ");
+        System.out.print(b + " ");
+        int i = 1;
+        while (i<=num-2) {
+            int c = a+b;
+            a = b;
+            b = c;
+            System.out.print(c + " ");
+            i++;
+        }
+    }
+}
+//perfect Number
+ private static int perfectNumber(int num) {
+        int i = 1;
+        int sum = 0;
+        for (i=1; i<num/2; i++) {
+            if (num % i == 0) {
+                sum = sum + i;
+            }
+        }
+        return sum;
+    }
+//Prime Number
+private static void isPrime(int num) {
+        int i = 2, count = 0;
+        if (num == 1 || num == 0) {
+            count++;
+            System.out.println(num + " is not a prime number.");
+        } else {
+            while(i<=num/2) {
+                if (num%i == 0) {
+                    count++;
+                }
+                i++;
+            }
+            if (count == 0)
+                System.out.println(num + " is prime number");
+            else
+                System.out.println(num + " is not a prime number.");
+        }
+
+    }
+//Reverse Number
+private static int reverseNumber(int num) {
+        int rem = 0;
+        int rev = 0;
+        int temp = num;
+
+        while (temp > 0) {
+            rem = temp % 10;
+            rev = rev * 10 + rem;
+            temp = temp /10;
+        }
+        return rev;
+    }
 
